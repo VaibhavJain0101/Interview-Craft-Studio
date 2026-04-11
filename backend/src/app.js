@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: true,
+    origin: "https://interview-craft-studio-1.onrender.com",
     credentials: true
 }))
 
