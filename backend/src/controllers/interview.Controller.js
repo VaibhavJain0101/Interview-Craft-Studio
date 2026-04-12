@@ -6,7 +6,7 @@ const interviewReportModel = require("../models/interviewReport.model")
 
 
 /**
- * Controller to generate interview report based on user self description, resume and job description.
+ * @description Controller to generate interview report based on user self description, resume and job description.
  */
 async function generateInterViewReportController(req, res) {
 
@@ -53,7 +53,7 @@ async function getInterviewReportByIdController(req, res) {
         message: "Interview report fetched successfully.",
         interviewReport
     })
-}   
+}
 
 
 /** 
