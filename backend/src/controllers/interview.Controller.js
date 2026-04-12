@@ -9,6 +9,9 @@ const interviewReportModel = require("../models/interviewReport.model")
  * @description Controller to generate interview report based on user self description, resume and job description.
  */
 async function generateInterViewReportController(req, res) {
+if (!req.file) {
+        return res.status(400).json({ error: "Resume file is required" });
+    }
 
     const resumeContent = await (new pdfParse.PDFParse(Uint8Array.from(req.file.buffer))).getText()
     const { selfDescription, jobDescription } = req.body
@@ -22,6 +25,7 @@ async function generateInterViewReportController(req, res) {
     const interviewReport = await interviewReportModel.create({
         user: req.user.id,
         resume: resumeContent.text,
+         title: jobDescription.split(" ").slice(0, 5).join(" "),
         selfDescription,
         jobDescription,
         ...interViewReportByAi
