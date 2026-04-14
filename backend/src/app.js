@@ -7,7 +7,10 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://interviewcraft-studio.netlify.app",
+    origin: [
+        "https://interviewcraft-studio.onrender.com",
+        "https://interviewcraft-studio.netlify.app"
+    ],
     credentials: true
 }))
 
