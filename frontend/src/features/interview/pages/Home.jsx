@@ -132,7 +132,7 @@ const Home = () => {
                                 maxLength={1200}
                             />
                             <div className="mt-3 flex items-center justify-between gap-4 text-sm leading-[1.4] text-[#8ea3bb]">
-                                <span>Use this if you do not have a resume handy.</span>
+                                <span>Both resume and Selfdescription have must</span>
                                 <span>{selfDescriptionCount} / 1200</span>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ const Home = () => {
                         <span className="mt-0.5 shrink-0 text-[#5eead4]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" stroke="#10261f" strokeWidth="2" /><line x1="12" y1="16" x2="12.01" y2="16" stroke="#10261f" strokeWidth="2" /></svg>
                         </span>
-                        <p className="leading-[1.65] text-[#c2f5ee]">Include either a <strong>resume</strong> or a <strong>self-summary</strong> alongside the job description to generate a personalized plan.</p>
+                        <p className="leading-[1.65] text-[#c2f5ee]">Include <strong>resume</strong> and a <strong>self-summary</strong> alongside the job description to generate a personalized plan.</p>
                     </div>
 
                     <div className="flex items-end justify-between gap-4 pt-1 max-[980px]:flex-col max-[980px]:items-stretch">
